@@ -32,22 +32,24 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return itemsMgr.items.count
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CellID")
         
-        cell.textLabel!.text = itemsMgr.items[indexPath.row].name
+       cell.textLabel!.text = itemsMgr.items[indexPath.row].name
 
-        cell.textLabel!.textColor = UIColor.whiteColor()
-        var selectedBgColorView = UIView()
-        let myColor = UIColor(red: 1, green: 165/255, blue: 0, alpha: 1)
-        selectedBgColorView.backgroundColor = myColor
-        cell.selectedBackgroundView = selectedBgColorView
+       cell.textLabel!.textColor = UIColor.whiteColor()
+       var selectedBgColorView = UIView()
+       let myColor = UIColor(red: 1, green: 165/255, blue: 0, alpha: 1)
+       selectedBgColorView.backgroundColor = myColor
+       cell.selectedBackgroundView = selectedBgColorView
 
-        cell.backgroundColor = UIColor.clearColor()
-        
+       cell.backgroundColor = UIColor.clearColor()
+
         return cell
         
     }
+
 }
