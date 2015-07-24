@@ -6,7 +6,7 @@ import UIKit
 
 var text: String? = "This is text"
 
-text = "true"
+text = nil
 
 var label = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 10))
 label.text = "Text"

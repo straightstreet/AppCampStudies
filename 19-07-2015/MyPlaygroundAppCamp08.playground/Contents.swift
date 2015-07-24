@@ -16,6 +16,6 @@ var label = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 15))
 label.text = "Hello"
 switch color{
 case .RGB(let r, let g, let b): label.textColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-default: label.textColor = UIColor.blackColor()
+default: label.textColor = UIColor.whiteColor()
 }
 

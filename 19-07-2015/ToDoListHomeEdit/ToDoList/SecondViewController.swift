@@ -1,6 +1,6 @@
 //
 //  SecondViewController.swift
-//  ToDoList3
+//  ToDoList
 //
 //  Created by User on 19.07.2015.
 //  Copyright (c) 2015 User. All rights reserved.
@@ -12,7 +12,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var itemsTableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,8 +19,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
+
         itemsTableView.reloadData()
     }
     
@@ -32,24 +30,21 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return itemsMgr.items.count
-
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CellID")
-        
-       cell.textLabel!.text = itemsMgr.items[indexPath.row].name
+        cell.textLabel!.text = itemsMgr.items[indexPath.row].name
+        cell.textLabel!.textColor = UIColor.whiteColor()
+        var selectedBgColorView = UIView()
+        let myColor = UIColor(red: 251.0/255, green: 177.0/255, blue: 6.0/255, alpha: 1.0)
+        selectedBgColorView.backgroundColor = myColor
+        cell.selectedBackgroundView = selectedBgColorView
 
-       cell.textLabel!.textColor = UIColor.whiteColor()
-       var selectedBgColorView = UIView()
-       let myColor = UIColor(red: 1, green: 165/255, blue: 0, alpha: 1)
-       selectedBgColorView.backgroundColor = myColor
-       cell.selectedBackgroundView = selectedBgColorView
-
-       cell.backgroundColor = UIColor.clearColor()
-
+        cell.backgroundColor = UIColor.clearColor()
         return cell
         
     }
 
+    
 }

@@ -1,6 +1,6 @@
 //
 //  ItemsManager.swift
-//  ToDoList2
+//  ToDoList
 //
 //  Created by User on 19.07.2015.
 //  Copyright (c) 2015 User. All rights reserved.
