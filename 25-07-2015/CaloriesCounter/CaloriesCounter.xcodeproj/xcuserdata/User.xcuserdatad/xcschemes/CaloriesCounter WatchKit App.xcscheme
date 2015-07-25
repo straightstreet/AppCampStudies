@@ -14,23 +14,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE53E9DD1B63AD9700BF359C"
-               BuildableName = "CaloriesCounter.app"
-               BlueprintName = "CaloriesCounter"
+               BlueprintIdentifier = "CE53EA101B63ADA400BF359C"
+               BuildableName = "CaloriesCounter WatchKit App.app"
+               BlueprintName = "CaloriesCounter WatchKit App"
                ReferencedContainer = "container:CaloriesCounter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE53E9F21B63AD9700BF359C"
-               BuildableName = "CaloriesCounterTests.xctest"
-               BlueprintName = "CaloriesCounterTests"
+               BlueprintIdentifier = "CE53EA061B63ADA400BF359C"
+               BuildableName = "CaloriesCounter WatchKit Extension.appex"
+               BlueprintName = "CaloriesCounter WatchKit Extension"
+               ReferencedContainer = "container:CaloriesCounter.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE53E9DD1B63AD9700BF359C"
+               BuildableName = "CaloriesCounter.app"
+               BlueprintName = "CaloriesCounter"
                ReferencedContainer = "container:CaloriesCounter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE53E9F21B63AD9700BF359C"
-               BuildableName = "CaloriesCounterTests.xctest"
-               BlueprintName = "CaloriesCounterTests"
-               ReferencedContainer = "container:CaloriesCounter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE53E9DD1B63AD9700BF359C"
-            BuildableName = "CaloriesCounter.app"
-            BlueprintName = "CaloriesCounter"
+            BlueprintIdentifier = "CE53EA101B63ADA400BF359C"
+            BuildableName = "CaloriesCounter WatchKit App.app"
+            BlueprintName = "CaloriesCounter WatchKit App"
             ReferencedContainer = "container:CaloriesCounter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/CaloriesCounter">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE53E9DD1B63AD9700BF359C"
-            BuildableName = "CaloriesCounter.app"
-            BlueprintName = "CaloriesCounter"
+            BlueprintIdentifier = "CE53EA101B63ADA400BF359C"
+            BuildableName = "CaloriesCounter WatchKit App.app"
+            BlueprintName = "CaloriesCounter WatchKit App"
             ReferencedContainer = "container:CaloriesCounter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CE53EA101B63ADA400BF359C"
+            BuildableName = "CaloriesCounter WatchKit App.app"
+            BlueprintName = "CaloriesCounter WatchKit App"
+            ReferencedContainer = "container:CaloriesCounter.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/CaloriesCounter">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE53E9DD1B63AD9700BF359C"
-            BuildableName = "CaloriesCounter.app"
-            BlueprintName = "CaloriesCounter"
+            BlueprintIdentifier = "CE53EA101B63ADA400BF359C"
+            BuildableName = "CaloriesCounter WatchKit App.app"
+            BlueprintName = "CaloriesCounter WatchKit App"
             ReferencedContainer = "container:CaloriesCounter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CE53EA101B63ADA400BF359C"
+            BuildableName = "CaloriesCounter WatchKit App.app"
+            BlueprintName = "CaloriesCounter WatchKit App"
+            ReferencedContainer = "container:CaloriesCounter.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CaloriesCounter WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CaloriesCounter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,12 +17,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CE53E9881B63ACCA00BF359C</key>
+		<key>CE53E9DD1B63AD9700BF359C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE53E99D1B63ACCB00BF359C</key>
+		<key>CE53E9F21B63AD9700BF359C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE53EA101B63ADA400BF359C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

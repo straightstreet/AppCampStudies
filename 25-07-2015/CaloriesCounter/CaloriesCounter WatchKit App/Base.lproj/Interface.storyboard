@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CaloriesCounter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="132" alignment="left" text="Calories Counter" textAlignment="center" id="h83-ez-ONj"/>
+                        <label width="131" alignment="left" text="500" textAlignment="center" id="RK2-vK-PUs"/>
+                        <group width="136" alignment="left" id="L5N-Rc-Cgl">
+                            <items>
+                                <button width="66" alignment="left" title="+" id="z3D-te-jcn">
+                                    <color key="backgroundColor" red="0.52941179275512695" green="0.67450982332229614" blue="0.086274512112140656" alpha="1" colorSpace="deviceRGB"/>
+                                    <connections>
+                                        <action selector="plusButtonTapped" destination="AgC-eL-Hgc" id="qhD-Uv-F96"/>
+                                    </connections>
+                                </button>
+                                <button width="65" alignment="left" title="-" id="Yjo-I5-i6f">
+                                    <color key="backgroundColor" red="0.094117656350135803" green="0.46666669845581055" blue="0.5058823823928833" alpha="1" colorSpace="deviceRGB"/>
+                                    <connections>
+                                        <action selector="minusButtonTapped" destination="AgC-eL-Hgc" id="dwh-cu-ZRF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="500" minimum="100" maximum="1000" steps="10" id="l9m-vl-h7u">
+                            <connections>
+                                <action selector="sliderTapped:" destination="AgC-eL-Hgc" id="spy-t7-EIu"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Add" id="WQ9-S1-sHO">
+                            <color key="backgroundColor" red="0.97647064924240112" green="0.72549021244049072" blue="0.015686275437474251" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="AzN-dL-bHv"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="w8Q-Jt-V4S">
+                            <connections>
+                                <action selector="hidden" destination="AgC-eL-Hgc" id="y3o-Kn-WJW"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="RK2-vK-PUs" id="e6C-AP-KIt"/>
+                        <outlet property="slider" destination="l9m-vl-h7u" id="Y2c-6M-dfd"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
