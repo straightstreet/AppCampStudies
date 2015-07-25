@@ -19,6 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+
+        //1. przetworzenie userInfo, wyciągnięcie parametrów operand1, operand2, operation
+        //2. stworzenie instacji klasy CalculatorBrain
+        //3. wywołanie funkcji reply z opowiedzią z CalculatorBrain
+
+        //1.
+
+        //2.
+        var isUserInTheMiddleOfTypingNumber: Bool = false
+        let brain: CalculatorBrain = CalculatorBrain()
+        //3.
+
+    }
+
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
