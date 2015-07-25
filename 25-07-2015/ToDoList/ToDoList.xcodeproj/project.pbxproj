@@ -15,6 +15,7 @@
 		CE998AAB1B5C4BDB002121D2 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE998AAA1B5C4BDB002121D2 /* ToDoListTests.swift */; };
 		CE9BD5181B5C4D3800F8BBC6 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9BD5171B5C4D3800F8BBC6 /* ItemsManager.swift */; };
 		CEA3E9041B637234005E3713 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEA3E9021B637234005E3713 /* ToDoList.xcdatamodeld */; };
+		CED763011B638BE60001DFB8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED763001B638BE60001DFB8 /* Item.swift */; };
 		CEEB5D951B5EA4B9007460EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB5D931B5EA4B9007460EA /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		CE998AAA1B5C4BDB002121D2 /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
 		CE9BD5171B5C4D3800F8BBC6 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		CEA3E9031B637234005E3713 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		CED763001B638BE60001DFB8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CEEB5D941B5EA4B9007460EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 		CE998A841B5C4BDB002121D2 = {
 			isa = PBXGroup;
 			children = (
+				CED763001B638BE60001DFB8 /* Item.swift */,
 				CE998A8F1B5C4BDB002121D2 /* ToDoList */,
 				CE998AA71B5C4BDB002121D2 /* ToDoListTests */,
 				CE998A8E1B5C4BDB002121D2 /* Products */,
@@ -224,6 +227,7 @@
 				CE998A971B5C4BDB002121D2 /* SecondViewController.swift in Sources */,
 				CE998A931B5C4BDB002121D2 /* AppDelegate.swift in Sources */,
 				CE9BD5181B5C4D3800F8BBC6 /* ItemsManager.swift in Sources */,
+				CED763011B638BE60001DFB8 /* Item.swift in Sources */,
 				CEA3E9041B637234005E3713 /* ToDoList.xcdatamodeld in Sources */,
 				CE998A951B5C4BDB002121D2 /* FirstViewController.swift in Sources */,
 			);
