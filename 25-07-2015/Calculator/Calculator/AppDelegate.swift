@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+   let brain: CalculatorBrain = CalculatorBrain()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,12 +26,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //2. stworzenie instacji klasy CalculatorBrain
         //3. wywołanie funkcji reply z opowiedzią z CalculatorBrain
 
-        //1.
+        if let inputDictionary = userInfo as? [String: String],
+        operand1 = inputDictionary["operand1"],
+        operand2 = inputDictionary["operand2"],
+        operation = inputDictionary["operation"]
+        {
+            brain.operand1 = (operand1 as NSString).doubleValue
+            brain.operand2 = (operand2 as NSString).doubleValue
+            brain.operation = operation
 
-        //2.
-        var isUserInTheMiddleOfTypingNumber: Bool = false
-        let brain: CalculatorBrain = CalculatorBrain()
-        //3.
+            let result = brain.calculate()
+
+            reply(["result": result])
+
+
+        }
 
     }
 
