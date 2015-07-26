@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>10E1CC91-9FDE-446D-BAB7-F8E3573F6280</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>CaloriesCounter</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>FE32373B323B205978BEDEBF60C2E663C91E3893</key>
 		<string>https://github.com/straightstreet/AppCampStudies.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>25-07-2015/CaloriesCounter/CaloriesCounter.xcodeproj/project.xcworkspace</string>
+	<string>25-07-2015/CaloriesCounter/CaloriesCounter.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>FE32373B323B205978BEDEBF60C2E663C91E3893</key>
