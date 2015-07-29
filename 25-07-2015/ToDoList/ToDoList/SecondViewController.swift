@@ -12,7 +12,6 @@ import CoreData
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var items = [Item]()
-
     @IBOutlet weak var itemsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -22,7 +21,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
         fetchData()
     }
     
@@ -36,11 +34,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-
         let cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "CellID")
-
         let item = items[indexPath.row]
-        
         cell.textLabel!.text = item.name
         cell.detailTextLabel!.text = item.details
 
@@ -49,17 +44,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let myColor = UIColor(red: 1, green: 165/255, blue: 0, alpha: 1)
         selectedBgColorView.backgroundColor = myColor
         cell.selectedBackgroundView = selectedBgColorView
-
         cell.backgroundColor = UIColor.clearColor()
-
-        
         return cell
     }
 
-
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-
-
         if (editingStyle == UITableViewCellEditingStyle.Delete){
             //deleteItem(items.removeAtIndex(indexPath.row))
             //itemsMgr.items.removeAtIndex(indexPath.row)
@@ -68,41 +57,30 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             fetchData()
             //itemsTableView.reloadData()
         }
-
     }
 
     func fetchData() {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let manageContext = appDelegate.managedObjectContext!
-
         let fetchRequest = NSFetchRequest(entityName: "Item")
-
         var error: NSError?
-
         let fetchResults = manageContext.executeFetchRequest(fetchRequest, error: &error) as? [Item]
-
         if let results = fetchResults{
             items = results
         }else{
             println("Could not fetch \(error), \(error?.userInfo)")
         }
-
         itemsTableView.reloadData()
-
     }
 
     func deleteItem(item: NSManagedObject){
-
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let manageContext = appDelegate.managedObjectContext!
-
         manageContext.deleteObject(item)
-
         var error: NSError?
-
         if !manageContext.save(&error){
             println("Could not save! \(error) \(error?.userInfo)")
         }
-
     }
+
 }

@@ -10,47 +10,72 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CaloriesCounter_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="132" alignment="left" text="Calories Counter" textAlignment="center" id="h83-ez-ONj"/>
-                        <label width="131" alignment="left" text="500" textAlignment="center" id="RK2-vK-PUs"/>
-                        <group width="136" alignment="left" id="L5N-Rc-Cgl">
+                        <label width="132" height="16" alignment="left" text="Calories Counter" textAlignment="center" id="h83-ez-ONj">
+                            <variation key="device=watch42mm" height="12" width="156"/>
+                        </label>
+                        <label width="131" height="12" alignment="left" text="0" textAlignment="center" id="RK2-vK-PUs">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <group width="136" height="100" alignment="left" id="L5N-Rc-Cgl">
                             <items>
-                                <button width="66" alignment="left" title="+" id="z3D-te-jcn">
-                                    <color key="backgroundColor" red="0.52941179275512695" green="0.67450982332229614" blue="0.086274512112140656" alpha="1" colorSpace="deviceRGB"/>
-                                    <connections>
-                                        <action selector="plusButtonTapped" destination="AgC-eL-Hgc" id="qhD-Uv-F96"/>
-                                    </connections>
-                                </button>
-                                <button width="65" alignment="left" title="-" id="Yjo-I5-i6f">
-                                    <color key="backgroundColor" red="0.094117656350135803" green="0.46666669845581055" blue="0.5058823823928833" alpha="1" colorSpace="deviceRGB"/>
+                                <button width="66" height="28" alignment="left" title="-" id="Yjo-I5-i6f">
+                                    <color key="backgroundColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <variation key="device=watch42mm" width="76"/>
                                     <connections>
                                         <action selector="minusButtonTapped" destination="AgC-eL-Hgc" id="dwh-cu-ZRF"/>
                                     </connections>
                                 </button>
+                                <button width="66" height="28" alignment="right" title="+" id="z3D-te-jcn">
+                                    <color key="backgroundColor" red="1" green="0.62018557711684263" blue="0.086913979063962588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <variation key="device=watch42mm" width="76"/>
+                                    <connections>
+                                        <action selector="plusButtonTapped" destination="AgC-eL-Hgc" id="qhD-Uv-F96"/>
+                                    </connections>
+                                </button>
                             </items>
+                            <variation key="device=watch38mm" height="30"/>
+                            <variation key="device=watch42mm" height="28" width="154"/>
                         </group>
-                        <slider width="1" alignment="left" value="500" minimum="100" maximum="1000" steps="10" id="l9m-vl-h7u">
+                        <slider width="100" height="28" alignment="left" value="25" maximum="1000" steps="40" id="l9m-vl-h7u">
+                            <variation key="device=watch38mm" width="136"/>
+                            <variation key="device=watch42mm" width="156"/>
                             <connections>
                                 <action selector="sliderTapped:" destination="AgC-eL-Hgc" id="spy-t7-EIu"/>
                             </connections>
                         </slider>
-                        <button width="1" alignment="left" title="Add" id="WQ9-S1-sHO">
-                            <color key="backgroundColor" red="0.97647064924240112" green="0.72549021244049072" blue="0.015686275437474251" alpha="1" colorSpace="deviceRGB"/>
+                        <group width="1" alignment="left" id="YAA-ae-FXd">
+                            <items>
+                                <button width="136" height="28" alignment="left" title="Add" id="WQ9-S1-sHO">
+                                    <color key="backgroundColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" width="154"/>
+                                    <connections>
+                                        <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="AzN-dL-bHv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="134" height="12" alignment="left" text="Calories total: 0" id="lVM-Cq-FMl">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <button width="136" height="28" alignment="left" title="Hide/Show Slider" id="w8Q-Jt-V4S">
+                            <color key="backgroundColor" red="1" green="0.62018557711684263" blue="0.086913979063962588" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" width="156"/>
                             <connections>
-                                <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="AzN-dL-bHv"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Button" id="w8Q-Jt-V4S">
-                            <connections>
-                                <action selector="hidden" destination="AgC-eL-Hgc" id="y3o-Kn-WJW"/>
+                                <action selector="hideButtonTapped" destination="AgC-eL-Hgc" id="v4B-VC-ESS"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
                         <outlet property="caloriesLabel" destination="RK2-vK-PUs" id="e6C-AP-KIt"/>
+                        <outlet property="caloriesTotalLabel" destination="lVM-Cq-FMl" id="w5Z-lh-GMN"/>
+                        <outlet property="hideButton" destination="w8Q-Jt-V4S" id="o9X-l5-cnI"/>
                         <outlet property="slider" destination="l9m-vl-h7u" id="Y2c-6M-dfd"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="-86.307692307692307" y="50.128205128205131"/>
         </scene>
     </scenes>
 </document>

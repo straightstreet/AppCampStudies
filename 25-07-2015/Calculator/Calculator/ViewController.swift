@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-            @IBOutlet weak var display: UILabel!
-            var isUserInTheMiddleOfTypingNumber: Bool = false
-            let brain: CalculatorBrain = CalculatorBrain()
+    @IBOutlet weak var display: UILabel!
+    var isUserInTheMiddleOfTypingNumber: Bool = false
+    let brain: CalculatorBrain = CalculatorBrain()
     
     var displayValueDouble: Double {
         get {

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Au-ZP-KhF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Glance Interface Controller-->
+        <scene sceneID="Gar-Zg-R0f">
+            <objects>
+                <glanceController bottomTemplateType="body2LargeBody2Footer" id="4FQ-eu-5TC" customClass="GlanceController" customModule="CaloriesCounter_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="9Ac-Pa-GcG">
+                            <items>
+                                <label width="136" height="20" alignment="left" text="Calories Counter" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="3cE-U6-E2E"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Calories left for today:" id="hrE-FW-UXn"/>
+                        <label alignment="left" text="2500" id="JFJ-wZ-4nR">
+                            <color key="textColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch38mm" text="2500"/>
+                        </label>
+                        <label alignment="left" text="Total calories eaten:" id="bcR-Hv-FvJ"/>
+                        <label alignment="left" text="out of total daily limit" id="fxe-c1-HZz"/>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLeftlabel" destination="JFJ-wZ-4nR" id="mdI-9T-80L"/>
+                        <outlet property="caloriesTotalLabel" destination="bcR-Hv-FvJ" id="Wwi-DH-A3d"/>
+                        <outlet property="dailyLimitLabel" destination="fxe-c1-HZz" id="NmC-hz-Gu7"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="463" y="205"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="PP7-Qe-rMD">
+            <objects>
+                <controller id="9Au-ZP-KhF" customClass="InterfaceController" customModule="CaloriesCounter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="132" height="16" alignment="left" text="Calories Counter" textAlignment="center" id="1DO-2n-3P5">
+                            <variation key="device=watch42mm" height="12" width="156"/>
+                        </label>
+                        <label width="131" height="12" alignment="left" text="0" textAlignment="center" id="wLo-vi-zx5">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <group width="136" height="100" alignment="left" id="zk3-uO-IVN">
+                            <items>
+                                <button width="66" height="28" alignment="left" title="-" id="Nxm-LR-FUH">
+                                    <color key="backgroundColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <variation key="device=watch42mm" width="76"/>
+                                    <connections>
+                                        <action selector="minusButtonTapped" destination="9Au-ZP-KhF" id="gA0-GC-ynI"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="28" alignment="right" title="+" id="Aaw-Hc-AZJ">
+                                    <color key="backgroundColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                    <variation key="device=watch42mm" width="76"/>
+                                    <connections>
+                                        <action selector="plusButtonTapped" destination="9Au-ZP-KhF" id="toK-Ym-wM8"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm" height="30"/>
+                            <variation key="device=watch42mm" height="28" width="154"/>
+                        </group>
+                        <slider width="136" height="28" alignment="left" value="25" maximum="1000" steps="40" id="sEE-AC-Bce">
+                            <variation key="device=watch42mm" width="156"/>
+                            <connections>
+                                <action selector="sliderTapped:" destination="9Au-ZP-KhF" id="ekL-dR-Ii5"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="L64-TS-Cd9">
+                            <items>
+                                <button width="136" height="28" alignment="left" title="Add" id="0pB-N2-aJ9">
+                                    <color key="backgroundColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" width="154"/>
+                                    <connections>
+                                        <action selector="addButtonTapped" destination="9Au-ZP-KhF" id="CJA-M8-onM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="134" height="12" alignment="left" text="Calories total: 0" id="s6Q-tL-eFv">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <button width="136" height="28" alignment="left" title="Hide/Show Slider" id="uu6-Nf-HOc">
+                            <color key="backgroundColor" red="1" green="0.6201855771" blue="0.086913979059999993" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" width="156"/>
+                            <connections>
+                                <action selector="hideButtonTapped" destination="9Au-ZP-KhF" id="glh-OC-82y"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="wLo-vi-zx5" id="DuC-rl-lr4"/>
+                        <outlet property="caloriesTotalLabel" destination="s6Q-tL-eFv" id="EXQ-dB-2tz"/>
+                        <outlet property="hideButton" destination="uu6-Nf-HOc" id="XQj-Se-vWf"/>
+                        <outlet property="slider" destination="sEE-AC-Bce" id="qbF-y3-AOM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="257.17948717948718" y="204.43589743589746"/>
+        </scene>
+    </scenes>
+</document>

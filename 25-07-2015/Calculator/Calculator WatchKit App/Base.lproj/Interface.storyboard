@@ -10,15 +10,15 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calculator_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="left" text="Label" id="vTV-KE-yiI"/>
+                        <label width="136" alignment="left" text="0" textAlignment="center" id="vTV-KE-yiI"/>
                         <button width="1" alignment="left" title="Digit" id="Wg2-Nb-nKw">
-                            <color key="backgroundColor" red="0.80000007152557373" green="0.28627452254295349" blue="0.074509806931018829" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.94855519617446749" green="0.61804471641740621" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="pushDigit" destination="AgC-eL-Hgc" id="MC0-LD-Xgp"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Operation" id="qVL-Gc-Yns">
-                            <color key="backgroundColor" red="0.043137256056070328" green="0.37254902720451355" blue="0.91372555494308472" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.89097416400909424" green="0.44575983039553047" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="pushOpertion" destination="AgC-eL-Hgc" id="9u8-6E-A72"/>
                             </connections>

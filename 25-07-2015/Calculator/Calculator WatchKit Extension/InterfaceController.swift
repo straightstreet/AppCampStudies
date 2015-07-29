@@ -9,17 +9,14 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
     var display = "0"
     var operand1 = "0"
     var operation = "="
     var isUserInTheMiddleOfTyping = false
-
     let initialDigits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
     let initialOperations = ["+", "-", "*", "/", "="]
-
     @IBOutlet weak var displayLabel: WKInterfaceLabel!
 
     @IBAction func pushDigit() {
@@ -30,8 +27,7 @@ class InterfaceController: WKInterfaceController {
             }else{
                 self.display = digit
                 self.isUserInTheMiddleOfTyping = true
-            }
-
+                }
             }
             self.displayLabel.setText(self.display)
         })
@@ -48,9 +44,7 @@ class InterfaceController: WKInterfaceController {
                 case "/": self.processOperation("/")
                 case "=": self.processEquals()
                 default: self.display = "0"
-
                 }
-
                 self.isUserInTheMiddleOfTyping = false
             }
         }
@@ -63,15 +57,12 @@ class InterfaceController: WKInterfaceController {
     }
 
     func processEquals(){
-
         let infoDictionary = ["operand1": operand1, "operand2": display, "operation": operation]
         WKInterfaceController.openParentApplication(infoDictionary) { (replyDictionary, error) -> Void in
-
             if let castedResponseDictionary = replyDictionary as? [String: Double],
                 responseMessage = castedResponseDictionary["result"]{
                     self.displayLabel.setText("\(responseMessage)")
             }
-
         }
     }
 }

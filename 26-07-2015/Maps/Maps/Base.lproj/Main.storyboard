@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background01" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-KH-IHc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo01Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="RJT-n3-eQd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="420"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We're sorry, but this app is designed only for Apple Watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-eR-cL0">
+                                <rect key="frame" x="44" y="411" width="513" height="87"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.02" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="31"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4l6-eR-cL0" secondAttribute="trailing" constant="27" id="3zy-Df-fKn"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QmU-KH-IHc" secondAttribute="bottom" id="8Ve-jE-Llh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="RJT-n3-eQd" secondAttribute="bottom" constant="180" id="BHM-Ea-zXB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4l6-eR-cL0" secondAttribute="bottom" constant="102" id="CUm-R7-EPX"/>
+                            <constraint firstItem="RJT-n3-eQd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Led-eE-xEF"/>
+                            <constraint firstItem="QmU-KH-IHc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Lvr-ag-6KF"/>
+                            <constraint firstItem="RJT-n3-eQd" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="MgZ-zi-gOp"/>
+                            <constraint firstItem="4l6-eR-cL0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="391" id="SuT-ac-buJ"/>
+                            <constraint firstItem="4l6-eR-cL0" firstAttribute="top" secondItem="RJT-n3-eQd" secondAttribute="bottom" constant="-9" id="Uo9-rM-tWA"/>
+                            <constraint firstItem="4l6-eR-cL0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="28" id="bU2-UP-3lH"/>
+                            <constraint firstAttribute="trailing" secondItem="RJT-n3-eQd" secondAttribute="trailing" id="gCd-7b-Owp"/>
+                            <constraint firstAttribute="trailing" secondItem="QmU-KH-IHc" secondAttribute="trailing" id="jbe-5a-29S"/>
+                            <constraint firstItem="QmU-KH-IHc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="srX-kg-Bve"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background01" width="1920" height="1920"/>
+        <image name="Logo01Cropped" width="1920" height="1343"/>
+    </resources>
+</document>

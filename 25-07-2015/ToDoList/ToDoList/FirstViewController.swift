@@ -10,10 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController, UITextFieldDelegate{
     
-    
     @IBOutlet weak var nameTextfield: UITextField!
-    
-    
     @IBOutlet weak var detailsTextfield: UITextField!
     
     override func viewDidLoad() {
@@ -24,7 +21,6 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-  
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -32,38 +28,28 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-    
-    textField.resignFirstResponder()
-    return true
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func addItemButton(sender: UIButton) {
         
         if(nameTextfield.text.isEmpty){
-        displayAlert()
-            
+            displayAlert()
         }else{
-        itemsMgr.addItem(nameTextfield.text, details: detailsTextfield.text)
-            
+            itemsMgr.addItem(nameTextfield.text, details: detailsTextfield.text)
             nameTextfield.text = ""
             detailsTextfield.text = ""
-            
             self.tabBarController?.selectedIndex = 0;
         }
-        
-        
     }
     
-    func displayAlert()
-    {
+    func displayAlert(){
         let alert = UIAlertController(title: "Empty name!", message: "You cannot save item without name", preferredStyle: UIAlertControllerStyle.Alert)
-        
         alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
-        
         self.presentViewController(alert, animated: true, completion: nil)
     }
-    
-    
+
 }
 
 

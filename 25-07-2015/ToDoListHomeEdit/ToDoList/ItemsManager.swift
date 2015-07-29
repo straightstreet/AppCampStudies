@@ -38,7 +38,7 @@ class ItemsManager : NSObject {
         var error: NSError?
 
         if !manageContext.save(&error){
-            println("You fucc'd up and dont kno what to do \(error) \(error?.userInfo)")
+            println("Error \(error) \(error?.userInfo)")
         }
         
 
