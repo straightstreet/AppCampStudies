@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07DAF2131B64C3D600722A89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAF2121B64C3D600722A89 /* AppDelegate.swift */; };
+		07DAF2151B64C3D600722A89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAF2141B64C3D600722A89 /* ViewController.swift */; };
+		07DAF2181B64C3D600722A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF2161B64C3D600722A89 /* Main.storyboard */; };
+		07DAF21A1B64C3D600722A89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF2191B64C3D600722A89 /* Images.xcassets */; };
+		07DAF21D1B64C3D600722A89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF21B1B64C3D600722A89 /* LaunchScreen.xib */; };
+		07DAF2291B64C3D600722A89 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAF2281B64C3D600722A89 /* RockPaperScissorsTests.swift */; };
+		07DAF23C1B64C3F000722A89 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAF23B1B64C3F000722A89 /* InterfaceController.swift */; };
+		07DAF23E1B64C3F000722A89 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAF23D1B64C3F000722A89 /* NotificationController.swift */; };
+		07DAF2401B64C3F000722A89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF23F1B64C3F000722A89 /* Images.xcassets */; };
+		07DAF2441B64C3F000722A89 /* RockPaperScissors WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF2431B64C3F000722A89 /* RockPaperScissors WatchKit App.app */; };
+		07DAF24C1B64C3F000722A89 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF24A1B64C3F000722A89 /* Interface.storyboard */; };
+		07DAF24E1B64C3F000722A89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DAF24D1B64C3F000722A89 /* Images.xcassets */; };
+		07DAF2511B64C3F000722A89 /* RockPaperScissors WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07DAF2361B64C3F000722A89 /* RockPaperScissors WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07DAF2B11B64D36400722A89 /* GameStatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DAF2B01B64D36400722A89 /* GameStatsController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07DAF2231B64C3D600722A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DAF2051B64C3D600722A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DAF20C1B64C3D600722A89;
+			remoteInfo = RockPaperScissors;
+		};
+		07DAF2451B64C3F000722A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DAF2051B64C3D600722A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DAF2421B64C3F000722A89;
+			remoteInfo = "RockPaperScissors WatchKit App";
+		};
+		07DAF24F1B64C3F000722A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DAF2051B64C3D600722A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DAF2351B64C3F000722A89;
+			remoteInfo = "RockPaperScissors WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07DAF2581B64C3F000722A89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07DAF2511B64C3F000722A89 /* RockPaperScissors WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07DAF20D1B64C3D600722A89 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DAF2111B64C3D600722A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DAF2121B64C3D600722A89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07DAF2141B64C3D600722A89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07DAF2171B64C3D600722A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07DAF2191B64C3D600722A89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07DAF21C1B64C3D600722A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		07DAF2221B64C3D600722A89 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DAF2271B64C3D600722A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DAF2281B64C3D600722A89 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
+		07DAF2361B64C3F000722A89 /* RockPaperScissors WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RockPaperScissors WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DAF2391B64C3F000722A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DAF23A1B64C3F000722A89 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		07DAF23B1B64C3F000722A89 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		07DAF23D1B64C3F000722A89 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		07DAF23F1B64C3F000722A89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07DAF2431B64C3F000722A89 /* RockPaperScissors WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RockPaperScissors WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DAF2491B64C3F000722A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DAF24B1B64C3F000722A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		07DAF24D1B64C3F000722A89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07DAF2AE1B64CF2F00722A89 /* RockPaperScissors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RockPaperScissors.entitlements; sourceTree = "<group>"; };
+		07DAF2AF1B64CFA400722A89 /* RockPaperScissors WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "RockPaperScissors WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		07DAF2B01B64D36400722A89 /* GameStatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatsController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07DAF20A1B64C3D600722A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF21F1B64C3D600722A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF2331B64C3F000722A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DAF2041B64C3D600722A89 = {
+			isa = PBXGroup;
+			children = (
+				07DAF20F1B64C3D600722A89 /* RockPaperScissors */,
+				07DAF2251B64C3D600722A89 /* RockPaperScissorsTests */,
+				07DAF2371B64C3F000722A89 /* RockPaperScissors WatchKit Extension */,
+				07DAF2471B64C3F000722A89 /* RockPaperScissors WatchKit App */,
+				07DAF20E1B64C3D600722A89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07DAF20E1B64C3D600722A89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF20D1B64C3D600722A89 /* RockPaperScissors.app */,
+				07DAF2221B64C3D600722A89 /* RockPaperScissorsTests.xctest */,
+				07DAF2361B64C3F000722A89 /* RockPaperScissors WatchKit Extension.appex */,
+				07DAF2431B64C3F000722A89 /* RockPaperScissors WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07DAF20F1B64C3D600722A89 /* RockPaperScissors */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2AE1B64CF2F00722A89 /* RockPaperScissors.entitlements */,
+				07DAF2121B64C3D600722A89 /* AppDelegate.swift */,
+				07DAF2141B64C3D600722A89 /* ViewController.swift */,
+				07DAF2161B64C3D600722A89 /* Main.storyboard */,
+				07DAF2191B64C3D600722A89 /* Images.xcassets */,
+				07DAF21B1B64C3D600722A89 /* LaunchScreen.xib */,
+				07DAF2101B64C3D600722A89 /* Supporting Files */,
+			);
+			path = RockPaperScissors;
+			sourceTree = "<group>";
+		};
+		07DAF2101B64C3D600722A89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2111B64C3D600722A89 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07DAF2251B64C3D600722A89 /* RockPaperScissorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2281B64C3D600722A89 /* RockPaperScissorsTests.swift */,
+				07DAF2261B64C3D600722A89 /* Supporting Files */,
+			);
+			path = RockPaperScissorsTests;
+			sourceTree = "<group>";
+		};
+		07DAF2261B64C3D600722A89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2271B64C3D600722A89 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07DAF2371B64C3F000722A89 /* RockPaperScissors WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2AF1B64CFA400722A89 /* RockPaperScissors WatchKit Extension.entitlements */,
+				07DAF23B1B64C3F000722A89 /* InterfaceController.swift */,
+				07DAF23D1B64C3F000722A89 /* NotificationController.swift */,
+				07DAF23F1B64C3F000722A89 /* Images.xcassets */,
+				07DAF2381B64C3F000722A89 /* Supporting Files */,
+				07DAF2B01B64D36400722A89 /* GameStatsController.swift */,
+			);
+			path = "RockPaperScissors WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		07DAF2381B64C3F000722A89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2391B64C3F000722A89 /* Info.plist */,
+				07DAF23A1B64C3F000722A89 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07DAF2471B64C3F000722A89 /* RockPaperScissors WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF24A1B64C3F000722A89 /* Interface.storyboard */,
+				07DAF24D1B64C3F000722A89 /* Images.xcassets */,
+				07DAF2481B64C3F000722A89 /* Supporting Files */,
+			);
+			path = "RockPaperScissors WatchKit App";
+			sourceTree = "<group>";
+		};
+		07DAF2481B64C3F000722A89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07DAF2491B64C3F000722A89 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07DAF20C1B64C3D600722A89 /* RockPaperScissors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DAF22C1B64C3D600722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */;
+			buildPhases = (
+				07DAF2091B64C3D600722A89 /* Sources */,
+				07DAF20A1B64C3D600722A89 /* Frameworks */,
+				07DAF20B1B64C3D600722A89 /* Resources */,
+				07DAF2581B64C3F000722A89 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DAF2501B64C3F000722A89 /* PBXTargetDependency */,
+			);
+			name = RockPaperScissors;
+			productName = RockPaperScissors;
+			productReference = 07DAF20D1B64C3D600722A89 /* RockPaperScissors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07DAF2211B64C3D600722A89 /* RockPaperScissorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DAF22F1B64C3D600722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissorsTests" */;
+			buildPhases = (
+				07DAF21E1B64C3D600722A89 /* Sources */,
+				07DAF21F1B64C3D600722A89 /* Frameworks */,
+				07DAF2201B64C3D600722A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DAF2241B64C3D600722A89 /* PBXTargetDependency */,
+			);
+			name = RockPaperScissorsTests;
+			productName = RockPaperScissorsTests;
+			productReference = 07DAF2221B64C3D600722A89 /* RockPaperScissorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07DAF2351B64C3F000722A89 /* RockPaperScissors WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DAF2551B64C3F000722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissors WatchKit Extension" */;
+			buildPhases = (
+				07DAF2321B64C3F000722A89 /* Sources */,
+				07DAF2331B64C3F000722A89 /* Frameworks */,
+				07DAF2341B64C3F000722A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DAF2461B64C3F000722A89 /* PBXTargetDependency */,
+			);
+			name = "RockPaperScissors WatchKit Extension";
+			productName = "RockPaperScissors WatchKit Extension";
+			productReference = 07DAF2361B64C3F000722A89 /* RockPaperScissors WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		07DAF2421B64C3F000722A89 /* RockPaperScissors WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DAF2521B64C3F000722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissors WatchKit App" */;
+			buildPhases = (
+				07DAF2411B64C3F000722A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RockPaperScissors WatchKit App";
+			productName = "RockPaperScissors WatchKit App";
+			productReference = 07DAF2431B64C3F000722A89 /* RockPaperScissors WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07DAF2051B64C3D600722A89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = appcamp;
+				TargetAttributes = {
+					07DAF20C1B64C3D600722A89 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2B7PA75W9Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					07DAF2211B64C3D600722A89 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 07DAF20C1B64C3D600722A89;
+					};
+					07DAF2351B64C3F000722A89 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2B7PA75W9Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					07DAF2421B64C3F000722A89 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2B7PA75W9Z;
+					};
+				};
+			};
+			buildConfigurationList = 07DAF2081B64C3D600722A89 /* Build configuration list for PBXProject "RockPaperScissors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07DAF2041B64C3D600722A89;
+			productRefGroup = 07DAF20E1B64C3D600722A89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07DAF20C1B64C3D600722A89 /* RockPaperScissors */,
+				07DAF2211B64C3D600722A89 /* RockPaperScissorsTests */,
+				07DAF2351B64C3F000722A89 /* RockPaperScissors WatchKit Extension */,
+				07DAF2421B64C3F000722A89 /* RockPaperScissors WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07DAF20B1B64C3D600722A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAF2181B64C3D600722A89 /* Main.storyboard in Resources */,
+				07DAF21D1B64C3D600722A89 /* LaunchScreen.xib in Resources */,
+				07DAF21A1B64C3D600722A89 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF2201B64C3D600722A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF2341B64C3F000722A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAF2401B64C3F000722A89 /* Images.xcassets in Resources */,
+				07DAF2441B64C3F000722A89 /* RockPaperScissors WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF2411B64C3F000722A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAF24C1B64C3F000722A89 /* Interface.storyboard in Resources */,
+				07DAF24E1B64C3F000722A89 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07DAF2091B64C3D600722A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAF2151B64C3D600722A89 /* ViewController.swift in Sources */,
+				07DAF2131B64C3D600722A89 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF21E1B64C3D600722A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAF2291B64C3D600722A89 /* RockPaperScissorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DAF2321B64C3F000722A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAF23E1B64C3F000722A89 /* NotificationController.swift in Sources */,
+				07DAF23C1B64C3F000722A89 /* InterfaceController.swift in Sources */,
+				07DAF2B11B64D36400722A89 /* GameStatsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07DAF2241B64C3D600722A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DAF20C1B64C3D600722A89 /* RockPaperScissors */;
+			targetProxy = 07DAF2231B64C3D600722A89 /* PBXContainerItemProxy */;
+		};
+		07DAF2461B64C3F000722A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DAF2421B64C3F000722A89 /* RockPaperScissors WatchKit App */;
+			targetProxy = 07DAF2451B64C3F000722A89 /* PBXContainerItemProxy */;
+		};
+		07DAF2501B64C3F000722A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DAF2351B64C3F000722A89 /* RockPaperScissors WatchKit Extension */;
+			targetProxy = 07DAF24F1B64C3F000722A89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07DAF2161B64C3D600722A89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DAF2171B64C3D600722A89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07DAF21B1B64C3D600722A89 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DAF21C1B64C3D600722A89 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		07DAF24A1B64C3F000722A89 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DAF24B1B64C3F000722A89 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07DAF22A1B64C3D600722A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07DAF22B1B64C3D600722A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07DAF22D1B64C3D600722A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RockPaperScissors/RockPaperScissors.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		07DAF22E1B64C3D600722A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RockPaperScissors/RockPaperScissors.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		07DAF2301B64C3D600722A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RockPaperScissorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockPaperScissors.app/RockPaperScissors";
+			};
+			name = Debug;
+		};
+		07DAF2311B64C3D600722A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RockPaperScissorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockPaperScissors.app/RockPaperScissors";
+			};
+			name = Release;
+		};
+		07DAF2531B64C3F000722A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RockPaperScissors_WatchKit_Extension;
+				INFOPLIST_FILE = "RockPaperScissors WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		07DAF2541B64C3F000722A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = RockPaperScissors_WatchKit_Extension;
+				INFOPLIST_FILE = "RockPaperScissors WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		07DAF2561B64C3F000722A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RockPaperScissors WatchKit Extension/RockPaperScissors WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RockPaperScissors WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07DAF2571B64C3F000722A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "RockPaperScissors WatchKit Extension/RockPaperScissors WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "RockPaperScissors WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07DAF2081B64C3D600722A89 /* Build configuration list for PBXProject "RockPaperScissors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DAF22A1B64C3D600722A89 /* Debug */,
+				07DAF22B1B64C3D600722A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DAF22C1B64C3D600722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DAF22D1B64C3D600722A89 /* Debug */,
+				07DAF22E1B64C3D600722A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DAF22F1B64C3D600722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DAF2301B64C3D600722A89 /* Debug */,
+				07DAF2311B64C3D600722A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DAF2521B64C3F000722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissors WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DAF2531B64C3F000722A89 /* Debug */,
+				07DAF2541B64C3F000722A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DAF2551B64C3F000722A89 /* Build configuration list for PBXNativeTarget "RockPaperScissors WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DAF2561B64C3F000722A89 /* Debug */,
+				07DAF2571B64C3F000722A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07DAF2051B64C3D600722A89 /* Project object */;
+}
